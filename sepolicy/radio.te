@@ -5,3 +5,8 @@ allow radio bg_boot_complete_prop:file read;
 allow radio bg_daemon_prop:file read;
 allow radio bluetooth_a2dp_offload_prop:file read;
 allow radio bluetooth_prop:file read;
+allow radio bootloader_boot_reason_prop:file read;
+allow radio boottime_prop:file read;
+allow radio cnd_vendor_prop:file read;
+allow radio console_silent_prop:file read;
+allow radio ctl_LKCore_prop:file read;
