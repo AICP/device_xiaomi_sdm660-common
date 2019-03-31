@@ -20,3 +20,8 @@ allow radio ctl_fuse_prop:file read;
 allow radio ctl_interface_restart_prop:file read;
 allow radio ctl_interface_start_prop:file read;
 allow radio ctl_interface_stop_prop:file read;
+allow radio ctl_mdnsd_prop:file read;
+allow radio ctl_qcrild_prop:file read;
+allow radio ctl_restart_prop:file read;
+allow radio ctl_sigstop_prop:file read;
+allow radio ctl_start_prop:file read;

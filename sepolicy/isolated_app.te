@@ -1,3 +1,4 @@
+#============= isolated_app ==============
 allow isolated_app bg_boot_complete_prop:file read;
 allow isolated_app bg_daemon_prop:file read;
 allow isolated_app bluetooth_a2dp_offload_prop:file read;
@@ -22,3 +23,8 @@ allow isolated_app ctl_qcrild_prop:file read;
 allow isolated_app ctl_restart_prop:file read;
 allow isolated_app ctl_rildaemon_prop:file read;
 allow isolated_app ctl_sigstop_prop:file read;
+allow isolated_app ctl_start_prop:file read;
+allow isolated_app ctl_stop_prop:file read;
+allow isolated_app ctl_vendor_hbtp_prop:file read;
+allow isolated_app ctl_vendor_imsrcsservice_prop:file read;
+allow isolated_app ctl_vendor_mmid_prop:file read;
