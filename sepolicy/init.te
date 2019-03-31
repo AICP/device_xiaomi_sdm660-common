@@ -31,7 +31,6 @@ allow init ueventd:process noatsecure;
 allow init vendor_init:process noatsecure;
 allow init vold:process noatsecure;
 allow init bootanim:process noatsecure;
-allow init hal_allocator_default:process noatsecure;
 allow init hal_cas_default:process noatsecure;
 allow init hal_configstore_default:process noatsecure;
 allow init hal_drm_default:process noatsecure;
