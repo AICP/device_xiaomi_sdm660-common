@@ -1,3 +1,4 @@
+#============= priv_app ==============
 allow priv_app sysfs_graphics:file { getattr open read };
 allow priv_app bg_boot_complete_prop:file read;
 allow priv_app bg_daemon_prop:file read;
@@ -45,3 +46,11 @@ allow priv_app graphics_vulkan_prop:file read;
 allow priv_app hal_fingerprint_prop:file read;
 allow priv_app hvdcp_opti_prop:file read;
 allow priv_app last_boot_reason_prop:file read;
+allow priv_app ctl_qcrild_prop:file read;
+allow priv_app ctl_restart_prop:file read;
+allow priv_app ctl_rildaemon_prop:file read;
+allow priv_app ctl_vendor_rild_prop:file read;
+allow priv_app ctl_vendor_rmt_storage_prop:file read;
+allow priv_app ctl_vendor_wigigsvc_prop:file read;
+allow priv_app exported_bluetooth_prop:file read;
+allow priv_app exported_overlay_prop:file read;

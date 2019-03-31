@@ -17,4 +17,8 @@ allow isolated_app ctl_fuse_prop:file read;
 allow isolated_app ctl_interface_restart_prop:file read;
 allow isolated_app ctl_interface_start_prop:file read;
 allow isolated_app ctl_interface_stop_prop:file read;
-
+allow isolated_app ctl_mdnsd_prop:file read;
+allow isolated_app ctl_qcrild_prop:file read;
+allow isolated_app ctl_restart_prop:file read;
+allow isolated_app ctl_rildaemon_prop:file read;
+allow isolated_app ctl_sigstop_prop:file read;

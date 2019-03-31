@@ -1,3 +1,4 @@
+#============= hal_fingerprint_sdm660 ==============
 type hal_fingerprint_sdm660, domain, binder_in_vendor_violators;
 hal_server_domain(hal_fingerprint_sdm660, hal_fingerprint)
 
@@ -40,3 +41,4 @@ allow hal_fingerprint_sdm660 default_prop:file open;
 allow hal_fingerprint_sdm660 fingerprintd_data_file:dir search;
 allow hal_fingerprint_sdm660 sysfs_fpc_dev:file write;
 allow hal_fingerprint_sdm660 fingerprintd_data_file:file getattr;
+allow hal_fingerprint_sdm660 sysfs_fpc_dev:file open;

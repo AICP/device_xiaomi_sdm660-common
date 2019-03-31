@@ -1,3 +1,4 @@
+#============= system_app ==============
 allow system_app camera_prop:property_service set;
 allow system_app spectrum_prop:property_service set;
 allow system_app wificond:binder call;
@@ -20,3 +21,8 @@ allow system_app ctl_atfwd_prop:file read;
 allow system_app ctl_bootanim_prop:file read;
 allow system_app ctl_console_prop:file read;
 allow system_app ctl_fuse_prop:file read;
+allow system_app ctl_interface_restart_prop:file read;
+allow system_app ctl_interface_start_prop:file read;
+allow system_app ctl_interface_stop_prop:file read;
+allow system_app ctl_mdnsd_prop:file read;
+allow system_app ctl_qcrild_prop:file read;
