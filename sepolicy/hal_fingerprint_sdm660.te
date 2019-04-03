@@ -47,4 +47,4 @@ allow hal_fingerprint_sdm660 fingerprintd_data_file:file { rename unlink };
 allow hal_fingerprint_sdm660 sdcardfs:dir search;
 allow hal_fingerprint_sdm660 fingerprint_prop:file read;
 allow hal_fingerprint_sdm660 fingerprint_data_file:dir search;
-
+allow hal_fingerprint_sdm660 fingerprint_prop:file getattr;

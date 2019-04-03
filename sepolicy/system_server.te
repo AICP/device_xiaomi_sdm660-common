@@ -32,3 +32,5 @@ allow system_server ctl_mdnsd_prop:file read;
 allow system_server ctl_qcrild_prop:file read;
 allow system_server ctl_restart_prop:file read;
 allow system_server ctl_rildaemon_prop:file read;
+allow system_server ctl_sigstop_prop:file read;
+allow system_server ctl_start_prop:file read;

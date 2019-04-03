@@ -91,3 +91,8 @@ allow init rmt_storage:process noatsecure;
 allow init sensors:process noatsecure;
 allow init vendor_pd_mapper:process noatsecure;
 allow init wificond:process noatsecure;
+allow init self:process execmem;
+allow init mediadrmserver:binder call;
+allow init sensors:process noatsecure;
+allow init thermalserviced:process noatsecure;
+allow init mediadrmserver:binder transfer;
