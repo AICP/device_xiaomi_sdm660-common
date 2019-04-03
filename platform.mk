@@ -166,12 +166,12 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # FM packages
-PRODUCT_PACKAGES += \
-	libqcomfm_jni \
-	android.hardware.broadcastradio@1.0-impl \
-	FM2 \
-	qcom.fmradio \
-	qcom.fmradio.xml
+# PRODUCT_PACKAGES += \
+# 	libqcomfm_jni \
+# 	android.hardware.broadcastradio@1.0-impl \
+# 	FM2 \
+# 	qcom.fmradio \
+# 	qcom.fmradio.xml
 
 # Framework RRO
 PRODUCT_ENFORCE_RRO_TARGETS := \
