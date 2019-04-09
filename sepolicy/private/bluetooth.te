@@ -1,0 +1,2 @@
+#============= bluetooth ==============
+allow bluetooth bootloader_boot_reason_prop:file read;

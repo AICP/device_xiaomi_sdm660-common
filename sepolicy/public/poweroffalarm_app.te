@@ -1,0 +1,3 @@
+#============= poweroffalarm_app ==============
+allow poweroffalarm_app bg_boot_complete_prop:file read;
+allow poweroffalarm_app bg_daemon_prop:file read;

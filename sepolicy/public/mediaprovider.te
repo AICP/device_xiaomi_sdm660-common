@@ -1,0 +1,16 @@
+#============= mediaprovider ==============
+allow mediaprovider bg_boot_complete_prop:file read;
+allow mediaprovider bg_daemon_prop:file read;
+
+allow mediaprovider boottime_prop:file read;
+allow mediaprovider cnd_vendor_prop:file read;
+allow mediaprovider console_silent_prop:file read;
+allow mediaprovider ctl_LKCore_prop:file read;
+allow mediaprovider ctl_atfwd_prop:file read;
+allow mediaprovider boottime_prop:file read;
+allow mediaprovider cnd_vendor_prop:file read;
+allow mediaprovider console_silent_prop:file read;
+allow mediaprovider ctl_LKCore_prop:file read;
+allow mediaprovider ctl_atfwd_prop:file read;
+allow mediadrmserver init:binder transfer;
+allow mediadrmserver init:binder call;

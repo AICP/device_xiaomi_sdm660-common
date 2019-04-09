@@ -1,0 +1,7 @@
+#============= tee ==============
+allow tee system_data_file:dir create_dir_perms;
+allow tee system_data_file:dir { read open };
+allow tee fingerprint_data_file:dir create_dir_perms;
+allow tee fingerprint_data_file:file create_file_perms;
+allow tee fingerprintd_data_file:dir { read open search write add_name };
+allow tee fingerprintd_data_file:file { read create open write };

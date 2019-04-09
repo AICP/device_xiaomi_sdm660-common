@@ -1,0 +1,7 @@
+#============= init ==============
+allow init lmkd:process noatsecure;
+allow init sysfs:file { open read write };
+allow init vendor_file:file { execute execute_no_trans };
+allow init hal_drm_hwservice:hwservice_manager add;
+allow init proc:file { getattr open setattr read };
+allow init vndbinder_device:chr_file { ioctl open read write };

@@ -1,0 +1,4 @@
+#============= hwservicemanager ==============
+allow hwservicemanager init:binder call;
+allow hwservicemanager runtime_event_log_tags_file:file read;
+allow hwservicemanager runtime_event_log_tags_file:file open;

@@ -1,0 +1,4 @@
+#============= system_app =============
+allow system_app firstboot_prop:file read;
+allow system_app bootloader_boot_reason_prop:file read;
+allow system_app sysfs:file { getattr open write };

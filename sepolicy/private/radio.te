@@ -1,0 +1,5 @@
+#============= radio ==============
+allow radio bluetooth_a2dp_offload_prop:file read;
+allow radio bluetooth_prop:file read;
+allow radio bootloader_boot_reason_prop:file read;
+allow radio exported_bluetooth_prop:file read;

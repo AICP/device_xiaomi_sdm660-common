@@ -1,0 +1,7 @@
+#============= traceur_app ==============
+allow traceur_app bg_boot_complete_prop:file read;
+allow traceur_app bg_daemon_prop:file read;
+allow traceur_app boottime_prop:file read;
+allow traceur_app cnd_vendor_prop:file read;
+allow traceur_app console_silent_prop:file read;
+allow traceur_app ctl_LKCore_prop:file read;

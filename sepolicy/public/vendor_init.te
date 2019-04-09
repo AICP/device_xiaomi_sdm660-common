@@ -1,0 +1,18 @@
+#============= vendor_init ==============
+allow vendor_init adsprpcd_file:dir create;
+allow vendor_init default_prop:property_service set;
+allow vendor_init rootfs:dir { add_name create setattr write };
+allow vendor_init nfc_data_file:dir { search setattr };
+allow vendor_init wpa_socket:dir setattr;
+allow vendor_init persist_debug_prop:property_service set;
+allow vendor_init persist_dpm_prop:property_service set;
+allow vendor_init qcom_ims_prop:property_service set;
+allow vendor_init radio_prop:property_service set;
+allow vendor_init rootfs:lnk_file setattr;
+allow vendor_init vendor_camera_prop:property_service set;
+allow vendor_init audio_prop:property_service set;
+allow vendor_init bservice_prop:property_service set;
+allow vendor_init mm_parser_prop:property_service set;
+allow vendor_init overlay_prop:property_service set;
+allow vendor_init spectrum_prop:property_service set;
+allow vendor_init media_rw_data_file:file getattr;

@@ -1,0 +1,3 @@
+#============= thermal-engine ==============
+allow thermal-engine self:capability { dac_override dac_read_search };
+allow thermal-engine system_data_file:dir read;

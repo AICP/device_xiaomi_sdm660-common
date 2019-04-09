@@ -1,0 +1,6 @@
+# /data/goodix labeling
+type_transition tee system_data_file:{ dir file } fingerprint_data_file;
+
+#============= tee ==============
+
+allow tee system_prop:property_service set;
