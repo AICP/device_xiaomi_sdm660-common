@@ -1,5 +1,3 @@
 #============= fsck ==============
 allow fsck custom_ab_block_device:blk_file { ioctl open read write };
-allow fsck block_device:blk_file { read write };
-allow fsck block_device:blk_file open;
-allow fsck block_device:blk_file ioctl;
+allow fsck block_device:blk_file { read write open ioctl };
