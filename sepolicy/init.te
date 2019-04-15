@@ -101,3 +101,6 @@ allow init energyawareness:process noatsecure;
 allow init hvdcp:process noatsecure;
 allow init keystore:process noatsecure;
 allow init thermal-engine:process noatsecure;
+allow init untrusted_app:fd { use };
+allow init hidl_memory_hwservice:hwservice_manager { find };
+allow init untrusted_app_27:fd { use };
