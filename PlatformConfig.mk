@@ -307,9 +307,7 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # TWRP Support
-ifeq ($(WITH_TWRP),true)
--include $(PLATFORM_PATH)/twrp.mk
-endif
+include $(PLATFORM_PATH)/twrp.mk
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
@@ -325,3 +323,4 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
+
