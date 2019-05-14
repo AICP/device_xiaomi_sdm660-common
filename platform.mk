@@ -24,6 +24,9 @@
 # Platform Path
 PLATFORM_PATH := device/xiaomi/sdm660-common
 
+# Platform properties
+$(call inherit-product, $(PLATFORM_PATH)/platform_prop.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -40,8 +43,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/taimen/taimen:9/PQ2A.190405.003/5310204:user/release-keys
 
-# Platform properties
-$(call inherit-product, $(PLATFORM_PATH)/platform_prop.mk)
+
 
 # Alipay
 PRODUCT_PACKAGES += \
