@@ -49,3 +49,4 @@ allow hal_fingerprint_sdm660 fingerprint_prop:file read;
 allow hal_fingerprint_sdm660 fingerprint_data_file:dir search;
 allow hal_fingerprint_sdm660 fingerprint_prop:file getattr;
 allow hal_fingerprint_sdm660 media_rw_data_file:dir { open read };
+allow hal_fingerprint_sdm660 rootfs:dir read;
