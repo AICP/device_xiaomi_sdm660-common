@@ -42,9 +42,9 @@ DEVICE_PACKAGE_OVERLAYS := device/xiaomi/sdm660-common/overlay
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	PRIVATE_BUILD_DESC="taimen-user 9 PQ3A.190505.001 5373320 release-keys"
+	PRIVATE_BUILD_DESC="taimen-user 9 PQ3A.190605.003 5524043 release-keys"
 
-BUILD_FINGERPRINT := google/taimen/taimen:9/PQ3A.190505.001/5373320:user/release-keys
+BUILD_FINGERPRINT := google/taimen/taimen:9/PQ3A.190605.003/5524043:user/release-keys
 
 
 
