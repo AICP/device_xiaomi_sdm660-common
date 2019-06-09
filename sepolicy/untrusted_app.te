@@ -1,2 +1,5 @@
 #============= untrusted_app ==============
 allow untrusted_app proc_asound:dir search;
+allow init untrusted_app:fd { use };
+allow init untrusted_app_27:fd { use };
+
