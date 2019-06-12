@@ -2,4 +2,7 @@
 allow untrusted_app proc_asound:dir search;
 allow init untrusted_app:fd { use };
 allow init untrusted_app_27:fd { use };
-
+allow untrusted_app tmpfs:dir { getattr };
+allow untrusted_app tmpfs:file {getattr };
+allow untrusted_app vendor_camera_prop:file { r_file_perms };
+allow untrusted_app vendor_default_prop:file { r_file_perms };

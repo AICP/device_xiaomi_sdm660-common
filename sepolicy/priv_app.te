@@ -94,3 +94,4 @@ allow priv_app otapreopt_slot_exec:file getattr;
 allow priv_app postinstall_file:filesystem getattr;
 allow priv_app recovery_refresh_exec:file getattr;
 allow priv_app vendor_audio_prop:file read;
+allow priv_app vendor_default_prop:file { r_file_perms };
