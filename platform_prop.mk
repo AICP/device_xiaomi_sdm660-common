@@ -34,7 +34,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.vc_call_vol_steps=7 \
 	ro.af.client_heap_size_kbyte=7168 \
 	ro.audio.flinger_standbytime_ms=300 \
-	ro.audio.soundfx.dirac=true \
 	ro.vendor.audio.sdk.fluencetype=fluence \
 	ro.vendor.audio.sdk.ssr=false \
 	vendor.audio.dolby.ds2.enabled=false \
@@ -101,13 +100,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Data
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.fuse_sdcard=true
-
-# Dirac (Xiaomi Headset Effect)
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.dirac.acs.controller=qem \
-	persist.dirac.acs.storeSettings=1 \
-	persist.dirac.acs.ignore_error=1 \
-	ro.audio.soundfx.dirac=true
 
 # Dirty ratios
 PRODUCT_PROPERTY_OVERRIDES += \

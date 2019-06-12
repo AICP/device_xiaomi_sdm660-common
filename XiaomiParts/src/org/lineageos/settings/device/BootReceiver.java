@@ -33,8 +33,6 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
             "max_brightness";
     private final String VIBRATION_STRENGTH_PATH = "/sys/devices/virtual/timed_output/vibrator" +
             "/vtg_level";
-    private final String HEADPHONE_GAIN_PATH = "/sys/kernel/sound_control/headphone_gain";
-    private final String MICROPHONE_GAIN_PATH = "/sys/kernel/sound_control/mic_gain";
 
     public void onReceive(Context context, Intent intent) {
 
@@ -72,11 +70,6 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
                         DeviceSettings.PREF_TORCH_BRIGHTNESS, 100));
         FileUtils.setValue(VIBRATION_STRENGTH_PATH, Settings.Secure.getInt(
                 context.getContentResolver(), DeviceSettings.PREF_VIBRATION_STRENGTH, 80) / 100.0 * (DeviceSettings.MAX_VIBRATION - DeviceSettings.MIN_VIBRATION) + DeviceSettings.MIN_VIBRATION);
-        int gain = Settings.Secure.getInt(context.getContentResolver(),
-                DeviceSettings.PREF_HEADPHONE_GAIN, 4);
-        FileUtils.setValue(HEADPHONE_GAIN_PATH, gain + " " + gain);
-        FileUtils.setValue(MICROPHONE_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                DeviceSettings.PREF_MICROPHONE_GAIN, 0));
-        context.startService(new Intent(context, DiracService.class));
+
     }
 }
