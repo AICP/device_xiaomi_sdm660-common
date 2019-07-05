@@ -76,6 +76,10 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
     public static final String CHARGE_PATH = "/sys/class/power_supply/battery/input_suspend";
 
+    public static final String CATEGORY_HALL_WAKEUP = "hall_wakeup";
+    public static final String PREF_HALL_WAKEUP = "hall";
+    public static final String HALL_WAKEUP_PATH = "/sys/module/hall/parameters/hall_toggle";
+
     public static final String DEVICE_DOZE_PACKAGE_NAME = "org.lineageos.settings.doze";
 
     private SecureSettingSwitchPreference mEnableHAL3;
@@ -93,6 +97,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private SecureSettingCustomSeekBarPreference mHeadphoneGain;
     private SecureSettingCustomSeekBarPreference mMicrophoneGain;
     private SecureSettingSwitchPreference mFastcharge;
+    private SecureSettingSwitchPreference mHall;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -178,6 +183,14 @@ public class DeviceSettings extends PreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(findPreference(CATEGORY_FASTCHARGE));
         }
+
+        if (FileUtils.fileWritable(HALL_WAKEUP_PATH)) {
+             mHall = (SecureSettingSwitchPreference) findPreference(PREF_HALL_WAKEUP);
+             mHall.setChecked(FileUtils.getFileValueAsBoolean(HALL_WAKEUP_PATH, false));
+             mHall.setOnPreferenceChangeListener(this);
+         } else {
+             getPreferenceScreen().removePreference(findPreference(CATEGORY_HALL_WAKEUP));
+         }
     }
 
     @Override
@@ -240,6 +253,10 @@ public class DeviceSettings extends PreferenceFragment implements
                 FileUtils.setValue(USB_FASTCHARGE_PATH, (boolean) value);
                 FileUtils.setValue(CHARGE_PATH, (int) 1);
                 FileUtils.setValue(CHARGE_PATH, (int) 0);
+                break;
+
+            case PREF_HALL_WAKEUP:
+                FileUtils.setValue(HALL_WAKEUP_PATH, (boolean) value);
                 break;
 
             default:
