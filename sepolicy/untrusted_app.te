@@ -6,3 +6,11 @@ allow untrusted_app tmpfs:dir { getattr };
 allow untrusted_app tmpfs:file {getattr };
 allow untrusted_app vendor_camera_prop:file { r_file_perms };
 allow untrusted_app vendor_default_prop:file { r_file_perms };
+allow untrusted_app proc_qtaguid_stat:file read;
+allow untrusted_app proc_version:file read;
+allow untrusted_app proc_zoneinfo:file read;
+allow untrusted_app serialno_prop:file read;
+allow untrusted_app sysfs_kgsl:dir search;
+allow untrusted_app system_app_data_file:dir getattr;
+allow untrusted_app vendor_default_prop:file read;
+

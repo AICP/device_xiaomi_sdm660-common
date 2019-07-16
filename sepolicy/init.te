@@ -108,3 +108,6 @@ allow init untrusted_app_27:fd { use };
 allow init hal_mlipay_hwservice:hwservice_manager add;
 allow init hal_power_hwservice:hwservice_manager { add };
 allow init hal_usb_hwservice:hwservice_manager { add };
+allow init hal_usb_gadget_hwservice:hwservice_manager { add };
+allow init system_file:dir relabelfrom;
+allow init system_file:file relabelfrom;
