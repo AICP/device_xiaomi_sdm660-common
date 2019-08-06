@@ -58,6 +58,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.bluetooth.bluetooth_audio_hal.disabled=true \
     ro.vendor.bluetooth.wipower=false
 
+# Build Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="taimen-user 10 QP1A.190711.020 5800535 release-keys"
+BUILD_FINGERPRINT := google/taimen/taimen:10/QP1A.190711.020/5800535:user/release-keys
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi \
