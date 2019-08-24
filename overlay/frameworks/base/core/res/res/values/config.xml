@@ -677,6 +677,9 @@
 	<!-- Default state for LiveDisplay -->
     <bool name="config_liveDisplayAvailable">true</bool>
 
+	<!-- allow moving audio panel -->
+<bool name="config_audioPanelOnLeftSide">true</bool>
+
     <!-- Configuration to enable non-default PDP during IWLAN -->
     <bool name="config_feature_iwlan_enabled">true</bool>
 
