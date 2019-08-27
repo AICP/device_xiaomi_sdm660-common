@@ -18,10 +18,5 @@
     "repository":  "xiaomi-sdm660/android_vendor_xiaomi_Miuicamera",
     "target_path": "vendor/xiaomi/MiuiCamera",
     "branch":      "master"
-  },
-  {
-    "repository":  "LineageOS/android_external_ant-wireless_antradio-library",
-    "target_path": "external/ant-wireless/antradio-library",
-    "branch":      "lineage-16.0"
   }
 ]
