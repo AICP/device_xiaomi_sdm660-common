@@ -101,6 +101,10 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     tinymix.vendor
 
+# JamesDSP
+PRODUCT_PACKAGES += \
+    JamesDSPManager
+    
 # Audio Configs
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
