@@ -18,5 +18,10 @@
     "repository":  "xiaomi-sdm660/android_vendor_xiaomi_Miuicamera",
     "target_path": "vendor/xiaomi/MiuiCamera",
     "branch":      "master"
+  },
+  {
+    "repository":  "phpBB3/packages_apps_Longshot",
+    "target_path": "packages/apps/Longshot",
+    "branch":      "pie-plus"
   }
 ]
