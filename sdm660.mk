@@ -375,11 +375,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
 PRODUCT_PACKAGES += \
-    ims-ext-common \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    ims-ext-common
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
