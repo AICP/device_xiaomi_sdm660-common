@@ -308,5 +308,9 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/xiaomi/sdm660-common \
+    vendor/xiaomi/wayne
+
 # Inherit the proprietary files
 -include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
