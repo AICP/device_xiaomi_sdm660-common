@@ -34,6 +34,10 @@ vendor/lib64/libbtnv.so
 # Bluetooth - from LA.UM.7.2.r1-06900-sdm660.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|514226960669db32e44a9457e6de7c07ac70ec1b
 
+# Camera watermark hax
+vendor/lib/libicuuc.so:vendor/lib/libicuuq.so
+vendor/lib/libminikin.so:vendor/lib/libminikiq.so
+
 # Charger
 vendor/bin/hvdcp_opti
 
