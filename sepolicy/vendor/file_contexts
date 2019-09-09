@@ -64,3 +64,9 @@
 
 # USB
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.xiaomi_sdm660       u:object_r:hal_usb_default_exec:s0
+
+# rootdir
+/bt_firmware    u:object_r:rootfs:s0
+/dsp    u:object_r:rootfs:s0
+/firmware    u:object_r:rootfs:s0
+/persist    u:object_r:mnt_vendor_file:s0
