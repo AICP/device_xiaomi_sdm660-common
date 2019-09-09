@@ -1,1 +1,1 @@
-allow netmgrd property_socket:sock_file write;
+#allow netmgrd property_socket:sock_file write;
