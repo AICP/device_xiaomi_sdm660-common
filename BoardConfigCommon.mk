@@ -305,5 +305,8 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_FEATURE_AWARE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Inherit the proprietary files
 -include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
