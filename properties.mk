@@ -110,8 +110,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="taimen-user 10 QP1A.190711.020 5800535 release-keys"
-BUILD_FINGERPRINT := google/taimen/taimen:10/QP1A.190711.020/5800535:user/release-keys
+    PRIVATE_BUILD_DESC="OnePlus6-user 8.1.0 OPM1.171019.01 06140300 release-keys"
+BUILD_FINGERPRINT := OnePlus/OnePlus6/OnePlus6:8.1.0/OPM1.171019.011/06140300:user/release-keys
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
