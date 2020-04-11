@@ -306,6 +306,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.target.rc \
     init.xiaomi_parts.rc \
+    init.performance.sdm660.rc \
     ueventd.qcom.rc
 
 # FM
