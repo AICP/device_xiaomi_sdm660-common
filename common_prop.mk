@@ -344,3 +344,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Nebrassy"
+
+# Zygote preforking
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
