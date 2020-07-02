@@ -28,7 +28,7 @@ COMMON_PATH := device/xiaomi/sdm660-common
 # A/B
 ifeq ($(ENABLE_AB), true)
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS ?= \
+AB_OTA_PARTITIONS += \
     boot \
     system \
     vendor
