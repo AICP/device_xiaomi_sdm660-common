@@ -28,7 +28,7 @@
 
     <!-- Notification LED brightness -->
     <string name="notification_title">Notification LED</string>
-    <string name="notification_led_title">LED brightness</string>
+    <string name="notification_led_title">LED Brightness</string>
 
     <!-- Ambient Display -->
     <string name="ambient_display">Ambient Display</string>
