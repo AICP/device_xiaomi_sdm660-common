@@ -5,11 +5,6 @@
     "branch": "lineage-18.1"
   },
   {
-    "repository":  "AICP/proprietary_vendor_xiaomi",
-    "target_path": "vendor/xiaomi",
-    "branch":      "r11.1"
-  },
-  {
     "repository":  "xiaomi-sdm660/android_vendor_xiaomi_MiuiCamera",
     "target_path": "vendor/xiaomi/MiuiCamera",
     "branch":      "master"
